@@ -15,8 +15,8 @@ implLexer.java:	impl.g4
 implLexer.class: implLexer.java
 	javac $(GENERATED)
 
-test:	main.class input.txt
-	java main input.txt
+test:	main.class 03-trafiklys.hw
+	java main 03-trafiklys.hw
 
-tree:	implLexer.class impl.g4 input.txt
-	$(grun) impl start -gui -tokens input.txt
+tree:	implLexer.class impl.g4 03-trafiklys.hw
+	$(grun) impl start -gui -tokens 03-trafiklys.hw

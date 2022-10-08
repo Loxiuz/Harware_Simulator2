@@ -47,24 +47,28 @@ public class main {
 class Interpreter extends AbstractParseTreeVisitor<Double> implements implVisitor<Double> {
 
     public Double visitStart(implParser.StartContext ctx){return null;}
-
-	public Double visitCommand(implParser.CommandContext ctx) {
-		return null;
-	}
-
-	public Double visitBlock(implParser.BlockContext ctx) {
-		return null;
-	}
-
-	public Double visitCondition(implParser.ConditionContext ctx) {
-		return null;
-	}
-
+	@Override
+	public Double visitHardware(implParser.HardwareContext ctx) {return null;}
+	@Override
+	public Double visitInputs(implParser.InputsContext ctx) {return null;}
+	@Override
+	public Double visitOutputs(implParser.OutputsContext ctx) {return null;}
+	@Override
+	public Double visitLatchDec(implParser.LatchDecContext ctx) {return null;}
+	@Override
+	public Double visitUpdate(implParser.UpdateContext ctx) {return null;}
+	@Override
+	public Double visitUpdateDec(implParser.UpdateDecContext ctx) {return null;}
+	@Override
+	public Double visitSimulate(implParser.SimulateContext ctx) {return null;}
+	@Override
+	public Double visitSimlnp(implParser.SimlnpContext ctx) {return null;}
+	@Override
 	public Double visitExpr(implParser.ExprContext ctx) {
 		return null;
 	}
 
-	;
+
     //public Double visitExpr(implParser.ExprContext ctx){return null;};
 
 }
